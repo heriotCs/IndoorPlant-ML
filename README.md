@@ -1,81 +1,78 @@
-# DMML-GRP-14  
-### Indoor Plant Health & Growth Prediction  
-*Data Mining and Machine Learning Coursework*
+# Indoor Plant Health and Growth Prediction
+
+## Overview
+
+This project applies machine learning and deep learning techniques to predict indoor plant health and growth using two data modalities: **tabular** sensor readings and **image** data. The pipeline covers the full ML workflow from exploratory analysis and preprocessing through clustering, baseline modeling, and neural network development.
 
 ---
 
-## 🧠 Project Overview
-This project focuses on predicting indoor plant health and growth using both **tabular** (sensor-based) and **image** (visual) datasets.  
-We apply a variety of machine learning and deep learning techniques to analyze, cluster, and model plant health indicators.
+## Notebook Structure
 
-The project explores the full ML pipeline - from **EDA and preprocessing**, to **clustering**, **baseline modeling**, and **neural networks**.
+### 1. EDA and Preprocessing
+**Folder:** [`R2_EDA_Preprocessing`](R2_EDA_Preprocessing/)
 
----
-
-## 🧾 Notebook Structure
-
-### 🧩 1. EDA and Preprocessing (R2)
-**Folder:** [`R2_EDA_Preprocessing`](R2_EDA_Preprocessing/)  
-- **Tabular:** Data cleaning, feature selection, outlier removal, normalization.  
-- **Image:** .  
-- **Goal:** Prepare both datasets for clustering and modeling.
+- **Tabular:** Data cleaning, feature selection, outlier removal, normalization
+- **Image:** Visual inspection and preprocessing of labeled plant images
+- **Goal:** Prepare both datasets for downstream clustering and modeling
 
 ---
 
-### 🔍 2. Clustering (R2)
-**Folder:** [`R2_Clustering`](R2_Clustering/)  
-- **Tabular:** K-Means Models applied to sensor data.  
-- **Image:**  
-- **Goal:** Identify natural groups or patterns in plant conditions.
+### 2. Clustering
+**Folder:** [`R2_Clustering`](R2_Clustering/)
+
+- **Tabular:** K-Means applied to sensor data to identify natural groupings
+- **Image:** Cluster analysis on visual features
+- **Goal:** Surface natural patterns and conditions in plant health data
 
 ---
 
-### 📊 3. Baseline Models (R3)
-**Folder:** [`R3_Baseline_Models`](R3_Baseline_Models/)  
-- **Tabular Models:** Logistic Regression, Decision Tree, KNN.  
-- **Image Models:** Decision Trees, Naive Bayes, KNN.  
-- **Goal:** Evaluate baseline model performance before deep learning.
+### 3. Baseline Models
+**Folder:** [`R3_Baseline_Models`](R3_Baseline_Models/)
+
+- **Tabular:** Logistic Regression, Decision Tree, KNN
+- **Image:** Decision Trees, Naive Bayes, KNN
+- **Goal:** Establish performance benchmarks before introducing deep learning
 
 ---
 
-### 🤖 4. Neural Networks (R4)
-**Folder:** [`R4_Neural_Networks`](R4_Neural_Networks/)   
+### 4. Neural Networks
+**Folder:** [`R4_Neural_Networks`](R4_Neural_Networks/)
+
+- Custom CNN trained on the image dataset
+- Deep learning models for tabular prediction tasks
 
 ---
 
-### 🗄 5. Archive
-**Folder:** [`Archive`](Archive/)  
-Contains older versions of datasets and notebooks retained for reference.
+### 5. Archive
+**Folder:** [`Archive`](Archive/)
+
+Older dataset versions and notebook iterations retained for reference.
 
 ---
 
-## 📂 Datasets
-**Folder:** [`Datasets`](Datasets/)  
-- **Tabular Dataset:** Indoor sensor readings (temperature, humidity, soil moisture, etc.).  
-- **Image Dataset:** Labeled plant images with various health conditions.
+## Datasets
+
+**Folder:** [`Datasets`](Datasets/)
+
+- **Tabular:** Indoor sensor readings (temperature, humidity, soil moisture, and related features)
+- **Image:** Labeled plant photographs covering a range of health conditions
 
 ---
 
-## 👥 Group Members
-| Name | Role / Contribution |
-|------|---------------------|
-| **Muhammad Saad** | R2 - Clusteing & Preprocessing of Tabular Datatset, R3 - Baseline Models for Tabular Dataset|
-| **Sharaf** | R2 Data Analysis and Exploration (EDA) on Image & Tabular Dataset |
-| **Sufyaan** | R4 Implemented a custom CNN on Image Dataset & Documentation |
-| **Hassan** | R2 Preprocessing of Image dataset & R4 Implementing a CNN on Image Dataset |
-| **Abdullah** | R3 Implementing Baseline Models on Tabular Dataset |
+## How to Run
 
----
-
-## 🧩 How to Run
 1. Clone the repository:
    ```bash
    git clone https://github.com/heriotCs/DMML-GRP-14.git
-2. Navigate to the Project Directory
+   ```
+
+2. Navigate to the project directory:
    ```bash
    cd DMML-GRP-14
-3.	Open the notebooks in Jupyter or VS Code and run them in order:
-• R2_EDA_Preprocessing
-• R2_Clustering
-• R3_Baseline_Models
-• R4_Neural_Networks
+   ```
+
+3. Open the notebooks in Jupyter or VS Code and run them in order:
+   - `R2_EDA_Preprocessing`
+   - `R2_Clustering`
+   - `R3_Baseline_Models`
+   - `R4_Neural_Networks`
